@@ -1,0 +1,27 @@
+{
+  "model": "LogisticRegression",
+  "cross_validation": {
+    "folds": 5,
+    "roc_auc_mean": 0.649,
+    "roc_auc_std": 0.007,
+    "average_precision_mean": 0.208,
+    "average_precision_std": 0.008
+  },
+  "validation": {
+    "threshold": 0.14411772663327302,
+    "roc_auc": 0.6592376843238846,
+    "average_precision": 0.22618361700025152,
+    "precision": 0.2129922391491808,
+    "recall": 0.42586206896551726,
+    "f1": 0.2839624449128185,
+    "accuracy": 0.749379652605459,
+    "specificity": 0.7921190494267709,
+    "npv": 0.9126137158852344,
+    "confusion_matrix": {
+      "tn": 10433,
+      "fp": 2738,
+      "fn": 999,
+      "tp": 741
+    }
+  }
+}

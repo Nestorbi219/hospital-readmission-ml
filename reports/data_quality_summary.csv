@@ -1,0 +1,11 @@
+metric,value
+rows,101766
+columns,50
+exact_duplicate_rows,0
+duplicate_encounter_ids,0
+unique_patients,71518
+patients_with_multiple_encounters,16773
+positive_target_count,11357
+positive_target_rate_pct,11.16
+constant_columns_count,2
+constant_columns,"examide, citoglipton"
