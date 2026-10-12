@@ -176,22 +176,6 @@ Run:
 3. `03_catboost.ipynb` — grouped cross-validation, CatBoost training, threshold scenarios, and final test evaluation.
 
 ## Current limitations
-
-- The CatBoost notebook contains executed results but does not currently persist the final CatBoost model or its metrics to the repository.
-- The final test cell expects a `selected_thresholds` dictionary that is not defined in the committed notebook source. To reproduce the displayed scenarios, define it before the test evaluation:
-
-  ```python
-  selected_thresholds = {
-      "balanced_f1": float(best_threshold),
-      "screening_recall_60": float(
-          threshold_scenarios.loc[
-              threshold_scenarios["target_recall"].eq(0.60),
-              "threshold",
-          ].iloc[0]
-      ),
-  }
-  ```
-
 - The repository is currently notebook-oriented; automated training, inference/API serving, Docker configuration, database integration, and substantive tests have not yet been implemented.
 - Dataset features are historical (1999–2008), so model performance and calibration should not be assumed to transfer to present-day hospitals or other patient populations.
 - Model outputs indicate statistical risk, not causality, and subgroup fairness has not yet been evaluated.
